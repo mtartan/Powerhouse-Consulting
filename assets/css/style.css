@@ -1,0 +1,318 @@
+
+body, html {
+    font-size: 16px;
+    font-family: 'Montserrat','Helvetica Neue',Arial,sans-serif;
+}
+
+#main-nav{
+    border-bottom:1px solid rgba(33,37,41,.1);
+    background-color:#fff;
+    /* font-family:'Open Sans','Helvetica Neue',Arial,sans-serif; */
+    -webkit-transition:all .2s;
+    -moz-transition:all .2s;
+    transition:all .2s
+}
+
+#main-nav .navbar-brand {
+    font-size: 2em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #f05f40;
+    /* font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif; */
+}
+
+
+#main-nav .navbar-brand:focus,#main-nav .navbar-brand:hover{
+    color:#f05f40
+}
+
+#main-nav .navbar-nav>li>a,#main-nav .navbar-nav>li>a:focus{
+    font-size:.9rem;
+    font-weight:700;
+    text-transform:uppercase;
+    color:#212529
+}
+
+#main-nav .navbar-nav>li>a:focus:hover,#main-nav .navbar-nav>li>a:hover{
+    color:#f05f40
+}
+
+#main-nav .navbar-nav>li.active>a,#main-nav .navbar-nav>li>a:focus.ac{
+    color:#f05f40!important;
+    background-color:transparent;
+}
+
+#main-nav .navbar-nav>li.active>a:hover,#main-nav .navbar-nav>li.active>a:focus:hover{
+    background-color:transparent;
+}
+
+.navbar-toggle {
+    background-color: #f05f40;
+    border-color: #e4674c!important;
+    color:#fff;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover{
+    background-color: #f05f40;
+}
+
+/* JUMBOTRON */
+.jumbotron {
+    position: relative;
+    margin-bottom: 0;
+    padding: 0;
+    width: 100vw;
+    overflow: hidden;
+    background: transparent;
+    -webkit-transition: all 800ms ease-in-out;
+	-moz-transition: all 800ms ease-in-out;
+	-ms-transition: all 800ms ease-in-out;
+	-o-transition: all 800ms ease-in-out;
+    transition: all 800ms ease-in-out;
+    text-align: center;
+}
+.jumbotron .container {
+  padding-top: 10em;
+  padding-bottom: 12em;
+  color: white;
+}
+.jumbotron .container h1 {
+  margin-bottom: .5em;
+  font-size: 2rem;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.25);
+}
+
+.jumbotron-bg {
+  background: url("../images/bg.jpg") no-repeat center center, rgba(112, 152, 255, 0);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -999;
+  background-blend-mode: soft-light;
+  -webkit-background-blend-mode: soft-lightsoft-light;
+
+    /* -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; */
+
+}
+
+.jumbotron a {
+    padding: 15px 18px;
+    background-color: #f05f40;
+    border-radius: 50%;
+    color: #fff
+}
+
+.jumbotron a:hover, #contact img:hover {
+    transition: opacity .2s;
+    opacity: .7;
+}
+
+/* ROW */
+.row {
+  margin-bottom: 8em;
+}
+
+h1.title {
+    display: block;
+    font-size: 36px;
+    font-weight: 100;
+    padding: 10px 0;
+    margin-bottom: 44px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+.section {
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    /* text-align: center; */
+}
+
+/* .carousel-container {
+    padding-top: 100px;
+    background-color: #222;
+} */
+/* .section-carousel {
+    background-color: #222;
+    padding-top: 120px;
+}
+.carousel-container .row {
+    margin-bottom: 2em;
+} */
+ #about p {
+    text-align: center;
+}
+
+#skills {
+    text-align: center;
+    background-color: #f05f40;
+    color: white;
+}
+
+#skills h4{
+	margin-bottom: 40px;
+}
+
+
+/* #portfolio h2, #portfolio p {
+    text-align: center;
+} */
+#portfolio h2 {
+    margin-top: 0;
+}
+
+#portfolio a {
+    text-decoration: none;
+    transition: color .2s;
+    color: #212529;
+}
+
+#portfolio a:hover {
+    color:  #f05f40;
+}
+
+#portfolio hr {
+    margin-bottom: 60px;
+}
+
+#portfolio hr:first-of-type{
+    border: none;
+}
+
+#contact {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+}
+
+#contact img {
+    height: 50px;
+    margin-bottom: 30px;
+}
+
+#contact img:first-of-type {
+    margin-right: 12px;
+}
+
+.devicons:before {
+    font-size: 4em;
+    color: white;
+}
+
+.animated {
+    opacity: 1 !important;
+}
+
+
+a.btn {
+    background-color: #f05f40;
+    color: #fff !important;
+}
+
+a.btn:hover {
+    color:#fff !important;
+    background-color: #e05738;
+}
+
+/* @media (min-width: 768px){
+     #portfolio h2,  #portfolio p, #port{
+        text-align: left;
+    } 
+} */
+@media (max-width: 768px){
+    #portfolio {
+        text-align: center;
+    }
+    #portfolio h2 {
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 992px){
+    .jumbotron-bg {
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    .jumbotron .container h1 {
+        font-size: 3rem;
+    }
+
+    #main-nav{
+        padding-top:25px;
+        padding-bottom:25px;
+        -webkit-transition:padding-top .3s,padding-bottom .3s;
+        -moz-transition:padding-top .3s,padding-bottom .3s;
+        transition:padding-top .3s,padding-bottom .3s;
+        border:none;
+        background-color:transparent;
+        background-color:transparent
+    }
+    
+    #main-nav .navbar-brand{
+        font-size:3em;
+        -webkit-transition:all .3s;
+        -moz-transition:all .3s;
+        transition:all .3s;
+        color:rgba(255,255,255,.7)
+    }
+    
+    #main-nav .navbar-brand:focus,#main-nav .navbar-brand:hover{
+        color:#fff
+    }
+
+    #main-nav .navbar-nav>li>a,#main-nav .navbar-nav>li>ak:focus{
+        color:rgba(255,255,255,.7)
+    }
+    
+    #main-nav .navbar-nav>li>a:focus:hover,#main-nav .navbar-nav>li>a:hover{
+        color:#fff
+    }
+    
+    #main-nav.navbar-shrink{
+        padding-top:0;
+		padding-bottom:0;
+        border-bottom:1px solid rgba(33,37,41,.1);
+        background-color:#fff
+    }
+
+    #main-nav.navbar-shrink .navbar-brand{
+        font-size: 2em;
+        color:#f05f40
+    }
+
+    #main-nav.navbar-shrink .navbar-brand:focus,#main-nav.navbar-shrink .navbar-brand:hover{
+        color:#f05f40
+    }
+
+    #main-nav.navbar-shrink .navbar-nav>li>a,#main-nav.navbar-shrink .navbar-nav>li>a:focus{
+        color:#212529
+    }
+
+    #main-nav.navbar-shrink .navbar-nav>li>a:focus:hover,#main-nav.navbar-shrink .navbar-nav>li>a:hover{
+        color:#f05f40
+    }
+
+    #main-nav.navbar-shrink .navbar-nav>li.active>a{
+        background-color:transparent;
+    }
+
+    h1.title {
+        font-size: 50px;
+        margin-bottom: 44px;
+    }
+
+    #about p {
+        font-size: 20px;
+    }
+}
